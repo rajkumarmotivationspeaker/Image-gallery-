@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #019EFF;
+    color: yellow;
+    padding: 5pxpx;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 90px;
+    box-shadow: 0px 5px 10px 2px black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.gallery-item {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#firstimg{
+	margin-top: 90px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #019EFF;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.title{
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	color: #019EFF ;
+	
+}
+.subtitle{
+	margin-top: -13px;
+	color: white;
+	background-color: #FF01EF;
+	font-weight: bold;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Image Gallery </h1>
+        <p class="subtitle"> <marquee>Welcome to all College Students. For Post Your
+        College Pic <b style="color: yellow ;">Send on Watsapp: 6206174349</b>.
+        Thank You 💚💛💙 </marquee></p>
+    </header>
+    <main class="gallery">
+       
+       
+       
+        <div class="gallery-item" id="firstimg">
+            <img src="pce.jpg" alt="Image 1">
+       <p class="title"> Purnea College of Engineering , Purnea</p>       
+          
+            
+        </div>
+       
+        <div class="gallery-item">
+            <img src=" a.jpg " alt="Image 2">
+            
+      <p class="title">    </p> 
+            
+        </div>
+       
+        <div class="gallery-item">
+            <img src=" a.jpg " alt="Image 3">
+            
+      <p class="title">    </p>
+        </div>
+      
+        <div class="gallery-item">
+            <img src="a.jpg" alt="Image 4">
+    <p class="title" >    </p>
+        </div>
+        
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>
+            
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>
+             
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div> 
+            
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>
+           
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>   
+            
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>  
+            
+     <div class="gallery-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+      <p class="title" >    </p>      
+        </div>  
+        
+        
+        
+        
+        
+        
+        <!-- Add more images as needed -->
+    </main>
+    <footer>
+        <p>© 2024 BEU-PYQ </p>
+    </footer>
+    
+    <!-- Add to index.html before closing </body> tag -->
+<script>
+document.querySelectorAll('.gallery-item img').forEach(image => {
+    image.addEventListener('click', () => {
+        const src = image.getAttribute('src');
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `<img src="${src}" alt="Expanded Image"><span class="close">&times;</span>`;
+        document.body.appendChild(lightbox);
+        
+        document.querySelector('.close').addEventListener('click', () => {
+            lightbox.remove();
+        });
+    });
+});
+</script>
+
+    
+    
+    
+</body>
+</html>
